@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="da">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Kontakt - BioSolv Plast</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+<div class="container">
+  <header><div class="brand"><div class="logo-placeholder"></div><div><h1 class="site-title">BioSolv Plast</h1><p class="tag">Kontakt os</p></div></div>
+  <nav><a href="index.html">Forside</a><a href="produkt.html">Produkt</a><a href="om-os.html">Om os</a><a href="faq.html">FAQ</a><a href="testimonials.html">Anbefalinger</a><a href="kontakt.html" class="active">Kontakt</a></nav></header>
+  <main>
+    <section class="hero small-hero fade-in-section"><h2>Kontakt</h2><p class="muted">Har du spørgsmål eller vil du prøve vores produkt? Skriv til os eller ring.</p></section>
+    <section class="contact-container fade-in-section">
+      <div class="contact-card">
+        <form id="contactForm">
+          <label for="name">Navn</label><input id="name" name="name" required>
+          <label for="company">Virksomhed (valgfri)</label><input id="company" name="company">
+          <label for="email">Email</label><input id="email" name="email" type="email" required>
+          <label for="message">Besked</label><textarea id="message" name="message" required></textarea>
+          <div class="form-row" style="display:flex;gap:12px;align-items:center;justify-content:space-between">
+            <button class="btn" type="submit">Send besked</button>
+            <div style="text-align:right">
+              <p class="muted">Frisvadvej 70</p><p class="muted">Tlf: <strong>22 74 77 47</strong></p>
+            </div>
+          </div>
+          <p id="formStatus" class="muted small" style="margin-top:8px"></p>
+        </form>
+        <div class="social-row"><button class="social-btn btn" data-platform="facebook">Facebook</button></div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer-inner"><p>kontakt@biosolvplast.dk · Frisvadvej 70 · Tlf: 22 74 77 47</p></footer>
+</div>
+<script src="scripts.js"></script>
+</body>
+</html>

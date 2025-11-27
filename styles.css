@@ -1,0 +1,68 @@
+:root{
+  --bg:#f7fbfd;
+  --card:#ffffff;
+  --accent:#0aa1b2;
+  --accent-2:#66d0cf;
+  --muted:#64707a;
+  --radius:14px;
+  --max-width:1200px;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;color:#0e1720;background:var(--bg);}
+.container{max-width:var(--max-width);margin:32px auto;padding:24px}
+header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:8px 0}
+.brand{display:flex;align-items:center;gap:14px}
+.logo-placeholder{width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,#e6fbff,rgba(10,161,178,0.12));display:flex;align-items:center;justify-content:center}
+.site-title{font-size:18px;margin:0}
+.tag{margin:0;color:var(--muted);font-size:13px}
+nav{display:flex;gap:14px;align-items:center}
+nav a{color:var(--muted);text-decoration:none;font-weight:600;padding:8px 12px;border-radius:8px}
+nav a.active, nav a:hover{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#fff}
+.school-badge{position:fixed;right:18px;top:14px;background:transparent;color:#0e1720;padding:6px 10px;border-radius:8px;font-weight:600;backdrop-filter: blur(6px)}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1fr 420px;gap:24px;align-items:center;margin-top:12px}
+.small-hero{grid-template-columns:1fr;text-align:left;padding:18px 0}
+.hero-card{background:linear-gradient(180deg, rgba(255,255,255,0.95), rgba(255,255,255,0.9));padding:20px;border-radius:14px;box-shadow:0 10px 30px rgba(10,16,20,0.04)}
+.hero h1,.hero h2{margin:0 0 10px 0;color:#062024}
+.hero p{color:var(--muted);line-height:1.6}
+.media{border-radius:12px;overflow:hidden;height:320px;background:linear-gradient(180deg,#e9f7fa,#dff4f6);display:flex;align-items:center;justify-content:center}
+.media img{max-width:100%;max-height:100%;object-fit:cover}
+
+/* cards */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:12px}
+.card{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 6px 18px rgba(10,16,20,0.04)}
+
+/* sections */
+.section{margin-top:20px;padding:12px 0}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+
+/* contact card */
+.contact-container{display:flex;justify-content:center;align-items:center;padding:32px 12px}
+.contact-card{background:var(--card);padding:22px;border-radius:12px;box-shadow:0 12px 40px rgba(2,12,18,0.06);max-width:720px;width:100%}
+.contact-card label{font-weight:600;margin-bottom:6px;margin-top:8px;display:block}
+.contact-card input,.contact-card textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #e6eef0;background:transparent;font-size:14px}
+.contact-card textarea{min-height:140px}
+.btn{display:inline-block;margin-top:12px;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:white;font-weight:700;text-decoration:none;border:none;cursor:pointer}
+.social-row{margin-top:12px;display:flex;gap:10px;align-items:center}
+
+/* team */
+.team-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-top:12px}
+.team-member{background:var(--card);padding:12px;border-radius:10px;text-align:center;box-shadow:0 6px 18px rgba(10,16,20,0.04)}
+.team-member img{width:100%;height:220px;object-fit:cover;border-radius:8px;margin-bottom:10px}
+
+/* faq & testimonials */
+.faq-item{background:var(--card);padding:12px;border-radius:10px;margin-bottom:10px;box-shadow:0 6px 18px rgba(10,16,20,0.04)}
+.testimonial{background:linear-gradient(90deg,rgba(10,161,178,0.05),rgba(102,208,207,0.02));padding:12px;border-radius:10px;font-style:italic}
+
+/* footer */
+.footer-inner{max-width:900px;margin:20px auto 0 auto;text-align:center;color:var(--muted);font-size:13px;padding:18px}
+
+/* fade-in */
+.fade-in-section{opacity:0;transform:translateY(20px);transition:opacity .8s ease-out, transform .8s ease-out}
+.fade-in-section.visible{opacity:1;transform:none}
+
+/* responsive */
+@media (max-width:980px){.hero{grid-template-columns:1fr}.media{height:220px};nav{display:none}}
+/* Logo styling */
+.
